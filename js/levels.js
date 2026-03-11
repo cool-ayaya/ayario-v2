@@ -25,7 +25,7 @@ const LEVELS = [
     // ─── LEVEL 1: GREEN MEADOW ─────────────────────────────────────────────────
     {
         name: 'Meadow', bg: 'sky', W: 5000, story: STORIES[0],
-        ps: { x: 4000, y: GY - PH },
+        ps: { x: 55, y: GY - PH },
         mplat: [
             MP(3500, GY - TILE * 3, 150, 'grass', 2.0, 3400, 3600),
             MP(3950, GY - TILE * 2, 150, 'grass', 2.0, 3800, 4000),
