@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aya's Adventure - Refactored</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="hud">
+      <div class="hi"><span class="aya-label">SCORE</span><span id="scoreEl" class="hv">0</span></div>
+      <div class="hi"><span class="aya-label">LIVES</span><span id="livesEl" class="hv">♥♥♥</span></div>
+      <div class="hi"><span class="aya-label">LEVEL</span><span id="levelEl" class="hv">1</span></div>
+      <div class="hi"><span class="aya-label">AYAS</span><span id="ayaEl" class="hv aya-value">0/0</span></div>
+      <div class="hi"><span class="aya-label">POWER</span><span id="powerEl" class="hv">——</span></div>
+    </div>
+    <div id="storyBar">
+      <div id="storyText">Chapter 1: Hey Aya! Reach the end!</div>
+    </div>
+    <canvas id="canvas" width="800" height="400"></canvas>
+    <button id="muteBtn">🔊</button>
+    <div id="overlay">
+      <h1>AYA'S ADVENTURE</h1>
+      <p>Aya is on a mission to recover her stolen emoji signs from the mischievous Souhaib!<br><br>
+        [Arrows/WASD] Move & Jump<br>
+        [Space] Use Power-ups (once collected)<br>
+        Collect all "Aya" signs to clear the level!</p>
+      <button class="btn" id="startBtn">START GAME</button>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+  </script>
+  <script src="js/config.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/drawing.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
